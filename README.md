@@ -26,5 +26,5 @@ To see how robust the models are, we train them on different image categories. I
 We concule that the task of coloring black and white images using an encoder-decoder style CNN, can be done if we treat is as a classification problem and use categorical cross-entropy as loss function. It works well when the testing images and training images share some similarity, for example images of the same species or similar scene. Simply use regression approach to predict values of a and b channel gives poor results. The classification model can be improved by rebalancing the class weight and replacing the “UpSampling2D” layers by “Conv2DTranspose”. Applying batch normalization and drop out can reduce overfitting but yields worse colorization quality. To reduce the artifact in a predicted color image, one can apply Gaussian filters to the color channels.
 
 ## Authors
-Qiongxuan Tan
+Qiongxuan Tan, 
 Xiaotian Pang
